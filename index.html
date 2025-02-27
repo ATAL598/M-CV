@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Malick Thiam</title>
+  <!-- Inclusion de Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header / Navigation -->
+  <header class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <h1 class="text-3xl font-bold">Malick Thiam</h1>
+      <nav class="mt-4 md:mt-0">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-gray-300" onclick="showSection('home')">Accueil</a></li>
+          <li><a href="#" class="hover:text-gray-300" onclick="showSection('about')">À Propos de moi</a></li>
+          <li><a href="#" class="hover:text-gray-300" onclick="showSection('skills')">Compétences</a></li>
+          <li><a href="#" class="hover:text-gray-300" onclick="showSection('projects')">Projets</a></li>
+          <li><a href="#" class="hover:text-gray-300" onclick="showSection('certifications')">Certifications</a></li>
+          <li><a href="#" class="hover:text-gray-300" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu Principal -->
+  <main class="container mx-auto px-4 py-10">
+   <!-- Section Accueil -->
+<section id="home" class="h-screen flex items-center justify-center bg-gray-900 text-white">
+    <div class="text-center px-6">
+      <h1 class="text-5xl font-extrabold mb-4 animate-fade-in">Bienvenue sur mon Portfolio</h1>
+      <p class="text-lg mb-6 text-gray-300 animate-fade-in delay-200">
+        Développeur Web | Designer | Spécialiste en Maintenance Informatique
+      </p>
+      <a href="#" onclick="showSection('contact')" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition duration-300 animate-fade-in delay-400">
+        Contactez-moi
+      </a>
+      
+      </a>
+    </div>
+  </section>
+  
+
+    <!-- Section À Propos de Moi -->
+<section id="about" class="py-10 bg-gray-100">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+      
+      <!-- Image de profil -->
+      <div class="md:w-1/3 mb-6 md:mb-0">
+        <img src="c:\Users\malic\Pictures\WhatsApp Image 2025-02-23 à 23.00.31_d962f70e.jpg" alt="Malick Thiam" class="rounded-full w-48 h-48 mx-auto shadow-lg">
+      </div>
+  
+      <!-- Texte de présentation -->
+      <div class="md:w-2/3 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">À Propos de Moi</h2>
+        <p class="mb-4 text-gray-700">
+          Je suis <strong>Malick Thiam</strong>, un développeur web passionné. Actuellement en <strong>Licence 2 en Génie Informatique</strong> à <strong>Unipro</strong>, j’ai débuté mon parcours par un <strong>baccalauréat en 2023 au Lycée Ouakam</strong>.
+        </p>
+        <p class="mb-4 text-gray-700">
+          Après mon bac, j’ai effectué un stage chez <strong>DevCode</strong>, où j’ai obtenu une <strong>certification en développement web</strong>. En parallèle, j’ai suivi une formation en <strong>maintenance informatique</strong> au <strong>Centre Delafosse</strong>, renforçant ainsi mes compétences en gestion et dépannage des systèmes informatiques.
+        </p>
+        <p class="text-gray-700">
+          Actuellement en formation, je travaille sur des projets de <strong>développement fullstack</strong>, en mettant l’accent sur la création d’applications <strong>performantes, modernes et sécurisées</strong>.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+    <!-- Section Compétences -->
+<!-- Section Compétences -->
+<section id="skills" class="bg-gray-50 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-6">💡 Mes Compétences</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Développement Web -->
+        <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="c:\Users\malic\Pictures\OIP.jpg" alt="Développement Web" class="w-20 h-20 mb-3">
+          <h3 class="text-xl font-semibold text-gray-800">Développement Web</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Maîtrise de HTML, CSS, JavaScript avec React, Vue.js et Tailwind CSS.
+          </p>
+        </div>
+  
+        <!-- Base de Données -->
+        <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="c:\Users\malic\Pictures\logo-techno-databases.png" alt="Base de Données" class="w-20 h-20 mb-3">
+          <h3 class="text-xl font-semibold text-gray-800">Base de Données</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Gestion de bases de données MySQL, PostgreSQL et MongoDB.
+          </p>
+        </div>
+  
+        <!-- Programmation -->
+        <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="c:\Users\malic\Pictures\programming-coding-concept-vector.jpg" alt="Programmation" class="w-20 h-20 mb-3">
+          <h3 class="text-xl font-semibold text-gray-800">Programmation</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Développement en Java, Python et C++ pour divers projets.
+          </p>
+        </div>
+  
+        <!-- Graphisme -->
+        <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="c:\Users\malic\Pictures\OIP (1).jpg" alt="Graphisme" class="w-20 h-20 mb-3">
+          <h3 class="text-xl font-semibold text-gray-800">Graphisme</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Création avec Photoshop, Illustrator et Figma.
+          </p>
+        </div>
+  
+        <!-- Réseau & Maintenance -->
+        <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+          <img src="c:\Users\malic\Pictures\R.png" alt="Réseau & Maintenance" class="w-20 h-20 mb-3">
+          <h3 class="text-xl font-semibold text-gray-800">Réseau & Maintenance</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Installation, configuration et dépannage des systèmes.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Projets -->
+<section id="projects" class="py-10 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Mes Projets</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Projet Gestion de Bibliothèque -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <img src="c:\Users\malic\Pictures\th (1).jpg" alt="Gestion de Bibliothèque" class="w-full h-40 object-cover rounded mb-4">
+          <h3 class="text-2xl font-semibold">Gestion de Bibliothèque en Java</h3>
+          <p class="text-gray-600 mt-2">
+            Application JavaFX permettant de gérer les emprunts et retours de livres avec un système de stockage en base de données.
+          </p>
+          <ul class="text-sm mt-2 text-gray-500">
+            <li>🔹 Technologies : Java, JavaFX, MySQL</li>
+            <li>🔹 Fonctionnalités : Gestion des livres, adhérents, emprunts et retours.</li>
+          </ul>
+        </div>
+  
+        <!-- Projet E-commerce -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <img src="c:\Users\malic\Pictures\th.jpg" alt="Site E-commerce" class="w-full h-40 object-cover rounded mb-4">
+          <h3 class="text-2xl font-semibold">Site E-commerce avec WordPress</h3>
+          <p class="text-gray-600 mt-2">
+            Développement d’un site WooCommerce permettant la vente en ligne avec gestion des paiements sécurisés.
+          </p>
+          <ul class="text-sm mt-2 text-gray-500">
+            <li>🔹 Technologies : WordPress, WooCommerce, PHP</li>
+            <li>🔹 Fonctionnalités : Gestion des produits, commandes et paiements.</li>
+          </ul>
+        </div>
+  
+        <!-- Projet Portfolio Personnel -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <img src="c:\Users\malic\Pictures\DALL·E 2025-01-31 14.22.56 - A modern and professional web design concept, featuring a clean, minimalist layout with coding elements and user interface (UI) design. The image incl.webp" alt="Portfolio Personnel" class="w-full h-40 object-cover rounded mb-4">
+          <h3 class="text-2xl font-semibold">Portfolio Personnel</h3>
+          <p class="text-gray-600 mt-2">
+            Conception et développement d’un site web personnel pour présenter mes projets et compétences.
+          </p>
+          <ul class="text-sm mt-2 text-gray-500">
+            <li>🔹 Technologies : HTML, CSS, JavaScript, Tailwind CSS</li>
+            <li>🔹 Fonctionnalités : Design responsive, animations interactives.</li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Certifications -->
+<section id="certifications" class="py-10 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Mes Certifications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+        
+        <!-- Certification Développement Web -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <img src="c:\Users\malic\Pictures\télécharger.jpg" alt="Certification Développement Web" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Développement Web</h3>
+          <p class="text-gray-600 mt-2">
+            Certificat obtenu après une formation approfondie en développement web, couvrant HTML, CSS, JavaScript, PHP et WordPress.
+          </p>
+          <span class="text-sm text-gray-500 block mt-2">📍 DevCode - 2024</span>
+        </div>
+  
+        <!-- Certification Maintenance Informatique -->
+        <div class="p-6 bg-white shadow-lg rounded-lg">
+          <img src="c:\Users\malic\Pictures\télécharger.jpg" alt="Certification Maintenance Informatique" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Maintenance Informatique</h3>
+          <p class="text-gray-600 mt-2">
+            Formation en diagnostic, réparation et installation de systèmes informatiques pour assurer la performance et la sécurité des machines.
+          </p>
+          <span class="text-sm text-gray-500 block mt-2">📍 Centre Commercial Maurice Delafosse</span>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Section Contact -->
+<section id="contact" class="py-10 bg-gray-100">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Contactez-moi</h2>
+      <p class="text-gray-600 mb-6">Vous avez un projet ou une question ? N’hésitez pas à me contacter.</p>
+      
+      <!-- Liens de contact -->
+      <div class="flex justify-center space-x-6 mb-6">
+        <a href="mailto:malick.thiam626@gmail.com" class="text-gray-800 hover:text-blue-600 transition duration-300">
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+        <a href="#" class="text-gray-800 hover:text-blue-600 transition duration-300">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="#" class="text-gray-800 hover:text-blue-600 transition duration-300">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+  
+      <!-- Formulaire de contact -->
+      <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="mb-4">
+          <input type="text" name="name" placeholder="Votre Nom" required 
+                 class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div class="mb-4">
+          <input type="email" name="email" placeholder="Votre Email" required 
+                 class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div class="mb-4">
+          <textarea name="message" placeholder="Votre Message" required rows="4"
+                    class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </section>
+  
+  </main>
+
+  <!-- Script pour le changement de section -->
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('main > section').forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+
+    // Afficher la section Accueil par défaut
+    document.addEventListener("DOMContentLoaded", () => {
+      showSection('home');
+    });
+  </script>
+  
+</body>
+</html>
